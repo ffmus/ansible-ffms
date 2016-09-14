@@ -1,3 +1,6 @@
+vm_id: 10
+server_besitzer: "Sven Culley / Sense"
+
 administratorenteam:
   - "parad0x"
   - "void" 
@@ -6,4 +9,6 @@ administratorenteam:
   - "fungur"
   - "descilla"
   - "mpw"
-  - "as1"
+  - "alucardo"
+  - "corny"
+

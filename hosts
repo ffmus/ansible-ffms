@@ -11,62 +11,34 @@ services    ansible_ssh_host=89.163.231.228
 
 # Backbone Server 
 [backbone]
-c1024    ansible_ssh_host=176.9.88.123
-fanlin   ansible_ssh_host=89.163.221.125 
-des1     ansible_ssh_host=5.9.86.144
-
-[backbone-legacy]
-fussel   ansible_ssh_host=37.120.168.53
-parad0x  ansible_ssh_host=5.9.67.189
-
-# Supernode Server 
-[supernodes]
-sn-fanlin-1   ansible_ssh_host=85.14.245.16
-sn-fanlin-2   ansible_ssh_host=213.202.222.143
-sense         ansible_ssh_host=176.221.46.161
-sn-kgbvax-1   ansible_ssh_host=46.38.239.30
-sn-descilla-1 ansible_ssh_host=5.9.86.154
-sn-kgbvax-2   ansible_ssh_host=136.243.99.72
-sn-kgbvax-3   ansible_ssh_host=136.243.99.49
+greyworm-07	ansible_ssh_host=89.163.129.16
 
 # Domänen
-[domaene-test]
-des2	ansible_ssh_host=5.9.86.145
-
 [domaene-01]
 remue-01	ansible_ssh_host=148.251.208.170
 greyworm-01     ansible_ssh_host=89.163.247.45
-fanlin-03	ansible_ssh_host=89.163.249.215
-
-[domaene-02]
-greyworm-02     ansible_ssh_host=89.163.247.46
-remue-05	ansible_ssh_host=148.251.208.172 
-
-[domaene-03]
-remue-02	ansible_ssh_host=148.251.208.171 
-greyworm-03     ansible_ssh_host=89.163.253.62 
-
-[domaene-04]
-greyworm-04     ansible_ssh_host=89.163.253.84
-remue-03	ansible_ssh_host=148.251.208.169 
-
-[domaene-05]
-parad0x-01	ansible_ssh_host=5.9.166.66
-remue-06	ansible_ssh_host=148.251.208.173
 
 [domaene-06]
 remue-04	ansible_ssh_host=148.251.208.168
 greyworm-05	ansible_ssh_host=89.163.139.196
 
-[domaene-waf]
-ffwaf-srv2	ansible_ssh_host=109.75.184.228
-ffwaf-srv3	ansible_ssh_host=109.75.188.244
-
-[domaene-14]
-ffwaf-srv4	ansible_ssh_host=89.187.208.59
-remue-07	ansible_ssh_host=148.251.208.174
+[gateways]
+# Gateways mit oder ohne Direktanbindung FFRL
+# Immer mit Multidomänen-L2TP
+greyworm-06	ansible_ssh_host=89.163.129.14
+remue-08	ansible_ssh_host=148.251.208.175
+parad0x		ansible_ssh_host=5.9.67.189		# Direktanbindung FFRL
+barristan	ansible_ssh_host=163.172.131.76		# Direktanbindung FFRL
+c1024		ansible_ssh_host=176.9.88.123		# Direktanbindung FFRL
+fanlin		ansible_ssh_host=89.163.221.125		# Direktanbindung FFRL
+ausrufer	ansible_ssh_host=163.172.211.238	# Direktanbindung FFRL
+rhe		ansible_ssh_host=46.105.252.246		# Direktanbindung FFRL
+des1		ansible_ssh_host=5.9.86.154		# Direktanbindung FFRL
 
 # Sonstige Server
+[firmware]
+firmware	ansible_ssh_host=144.76.30.226 ansible_ssh_port=223
+
 #[ffms-arbeitsmittel]
 #ffms-ansible    ansible_ssh_host=148.251.208.168
 

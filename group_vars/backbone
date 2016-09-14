@@ -1,14 +1,5 @@
 # Variablen für Backbone-Server
 
-# Parameter für das eigene Freifunk-Netzwerk
-ff_network:
-  # Eindeutige AS-Nummer des Netzwerk
-  as_number: 65251
-  # IPv4 Adressraum
-  v4_network: 10.43.0.0/16
-  # IPv6 adressraum
-  v6_network: 2a03:2260:115::/48 
-
 ffms_routing:
   net: 2a03:2260:115::/48
   domaenen:
@@ -25,25 +16,14 @@ ffms_routing:
   - group_name: domaene-06
     v6_net: 2a03:2260:115:600::/56
 
-# Zielserver für Graphite Daten 
-graphite_data_target:
-  # IP Adresse
-  host: 5.9.86.154
-  # Port des Carbon-Dienstes 
-  port: 2003  
   
 # Collectd Konfiguration 
 collectd:
-  # Prefix für Graphite-Daten
-  graphite_prefix: backbone.
   collect_dhcp: false
   collect_fastd: false
+  collect_l2tp: false
   collect_ipv4ipv6: true
-
-bind:
-  ffms_zone_type: slave
-  ffms_zone_masters:
-    - 89.163.231.228
+  collect_sysctl: true
 
 administratorenteam:
   - "parad0x"
@@ -53,4 +33,3 @@ administratorenteam:
   - "fungur"
   - "descilla"
   - "mpw"
-  - "paulinsche"

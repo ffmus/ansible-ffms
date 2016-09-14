@@ -9,9 +9,11 @@
     - { role: backports-kernel, tags: "backports-kernel"}
     - { role: ip_forwarding, tags: "ip_forwarding"}
     - { role: tunearpcache, tags: "tunearpcache"}
-    - { role: interfaces_ffrl, tags: "interfaces_ffrl"}
-    - { role: interfaces_ffms_backbone, tags: "interfaces_ffms_backbone"}
-#    - { role: bird_backbone, tags: "bird_backbone"}
+    - { role: net_netfilter, tags: "net_netfilter"}
+    - { role: iptables, tags: "iptables"}
+    - { role: backbone_gre_ffrl, tags: "backbone_gre_ffrl"}
+    - { role: backbone_gre_ffms, tags: "backbone_gre_ffms"}
+    - { role: bird, tags: "bird"}
+    - { role: gateways_bind, tags: "gateways_bind"}
     - { role: collectd, tags: "collectd"}
-    - { role: bind_backbone, tags: "bind_backbone"}
 
